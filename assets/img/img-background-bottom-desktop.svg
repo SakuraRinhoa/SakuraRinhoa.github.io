@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="557" viewBox="0 0 1920 557">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_884" data-name="矩形 884" width="1920" height="557" transform="translate(0 3240)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.662" y1="0.997" x2="0.35" y2="-0.002" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#409ec3"/>
+      <stop offset="1" stop-color="#085b7b"/>
+    </linearGradient>
+    <filter id="多边形_27" x="-637.224" y="-464" width="3214.448" height="3221.7" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-color="#8ce6eb" flood-opacity="0.58"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="蒙版组_11" data-name="蒙版组 11" transform="translate(0 -3240)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 0, 3240)" filter="url(#多边形_27)">
+      <path id="多边形_27-2" data-name="多边形 27" d="M1667.964,0A120,120,0,0,1,1772.1,60.369L2282.561,951.8a120,120,0,0,1,0,119.262L1772.1,1962.5a120,120,0,0,1-104.135,60.369H648.743A120,120,0,0,1,544.608,1962.5L34.146,1071.064a120,120,0,0,1,0-119.262L544.608,60.369A120,120,0,0,1,648.743,0Z" transform="matrix(0.69, -0.72, 0.72, 0.69, -572.22, 1257.5)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

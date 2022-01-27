@@ -1,11 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
-<head></head>
+<head>
+    <meta charset="utf-8">
+    <title>乐牧科技 | LemuTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Local jQuery JS Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.i18n.properties-1.0.9.js"></script>
+    <!--Loacl Bootstrap5 Icons Collection CSS Files-->
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- 本地 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.5.1.1.min.css">
+    <!-- 本地 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.5.1.1.bundle.min.js"></script>
+    <!-- Loacl JS Files -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--Loacl CSS Files-->
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="page-container">
+        <!-- Part_NavBar Start -->
+        <nav id="nav-navbar" class="navbar navbar-expand-lg fixed-top justify-content-between">
+            <div class="container-xxl">
+                <!-- Brand Start -->
+                <div id="div-brand-navbar" class="row d-flex align-items-center">
+                    <!-- Logo Img Start -->
+                    <div id="div-logoimg-navbar" class="col">
+                        <a id="a-logoimg-navbar" class="navbar-brand mx-auto d-inline-block" href="#top">
+                            <img id="img-logo-navbar" class="unselectable" src="assets/img/Lemu-Logo-img.svg"
+                                alt="Lemu Ltd. Logo"></img>
+                        </a>
+                    </div>
+                    <!-- Logo Img End -->
+                    <!-- Logo Text Start -->
+                    <div id="div-logotext-navbar" class="col">
+                        <a id="a-logotext-navbar" class="navbar-brand mx-auto d-inline-block" href="#top">
+                            <p id="p-logotextzh-nabvar" class="font-white unselectable" href="#top">乐牧科技</p>
+                            <p id="p-logotexten-nabvar" class="font-white unselectable" href="#top">LEMU TECHNOLOGY</p>
+                        </a>
+                    </div>
+                    <!-- Logo Text End -->
+                </div>
+                <!-- Brand End -->
+                <!-- Menu Button(Mobile) Start -->
+                <!-- Checked -->
+                <div id="div-button-mobilemenu" class="mobile-layout">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Menu Button(Mobile) End -->
+                <!-- Menu Bar Start -->
+                <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+                    <!-- Bootstrap id -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link font-white" data-i18n="navbar-index-title" href="#top">
+                                <img class="img-menuitem-mobile" src="assets/img/icon-nav-home.svg"></img>
+                                首页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-white" href="#aboutlemu" data-i18n="navbar-about-title">
+                                <img class="img-menuitem-mobile" src="assets/img/icon-nav-about.svg"></img>
+                                关于乐牧
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-white" href="#contantus" data-i18n="navbar-contact-title">
+                                <img class="img-menuitem-mobile" src="assets/img/icon-nav-connect.svg"></img>
+                                联系我们
+                            </a>
+                        </li>
+                        <li class="nav-item" id="delimiter-menu-navbar">
+                            <div id="vr-menu-navbar"></div>
+                            <hr>
+                        </li>
+                        <!-- dropdown-divider -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-white" href="#" id="navbardrop" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-i18n="language-title">
+                                <img class="img-menuitem-mobile" src="assets/img/icon-nav-language.svg"></img>
+                                Languages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item font-white" href="javascript:void(0)"
+                                    onclick="loadProperties('zh');">
+                                    <img class="img-language-dropdownitem-menubar"
+                                        src="assets/img/flag-cn-twitter.png"></img>
+                                    简体中文
+                                </a>
+                                <a class="dropdown-item font-white" href="javascript:void(0)"
+                                    onclick="loadProperties('en');">
+                                    <img class="img-language-dropdownitem-menubar"
+                                        src="assets/img/flag-uk-twitter.png"></img>
+                                    English
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menu Bar End -->
+            </div>
+        </nav>
+        <!-- Nav Bar End -->
+        <!-- 网页主要内容 Start-->
+        <!-- Part_1 AboutUs 乐牧在做什么 Start -->
+        <div id="div-container-aboutus" class="container-xxl">
+            <!-- 书签 > 首页 -->
+            <a name="top"></a>
+            <!-- Mobile Layout -->
+            <div id="div-layout-aboutus-mobile" class="mobile-layout row align-items-center">
+                <!-- 标题部分 -->
+                <div class="col-12">
+                    <div id="div-motto-title-text-aboutus-mobile" class="row justify-content-center">
+                        <!-- id issue -->
+                        <div class="col-8">
+                            <p class="motto-title-mobile text-start" data-i18n="motto-title-cn">乐牧在做什么？</p>
+                            <p class="motto-title-mobile text-end" data-i18n="motto-title-en">Our Vision</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 装饰画部分 -->
+                <div id="div-painting-aboutus-mobile" class="col-12">
+                    <img id="img-painting-aboutus-mobile" class="svg-w-100"
+                        src="assets/img/img-aboutus-painting.svg"></img>
+                </div>
+                <!-- 文字部分 -->
+                <div id="div-vision-aboutus-mobile" class="col-12 d-flex justify-content-center align-items-center">
+                    <p id="p-vision-aboutus-mobile" class="index-text text-center" data-i18n="vision-paragraph">
+                        乐牧在做什么？乐牧科技致力于服务全球的养殖业，为养殖场提供大数据与人工智能服务，实现产业链的升级，让养殖变得更简单，高效且可持续。</p>
+                </div>
+            </div>
+            <!-- Desktop Layout -->
+            <div class="desktop-layout">
+                <div id="div-layout-aboutus-desktop" class="row d-flex justify-content-center align-items-center">
+                    <!-- Mod Text -->
+                    <div id="div-text-aboutus-desktop" class="col-4 offset-1">
+                        <div id="div-motto-title-text-aboutus-desktop" class="">
+                            <p id="p-motto-title-text-aboutus-desktop" class="text-start motto-title-desktop"
+                                data-i18n="motto-title-cn">乐牧在做什么？</p>
+                            <p id="p-motto-title-text-aboutus-desktop" class="text-end motto-title-desktop"
+                                data-i18n="motto-title-en">Our Vision</p>
+                        </div>
+                        <div id="div-vision-paragraph-text-aboutus-desktop" class="">
+                            <p id="p-vision-aboutus-desktop" class="text-center index-text"
+                                data-i18n="vision-paragraph">
+                                乐牧在做什么？乐牧科技致力于服务全球的养殖业，为养殖场提供大数据与人工智能服务，实现产业链的升级，让养殖变得更简单，效且可持续。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Mod Painting -->
+                    <div id="div-painting-aboutus-desktop" class="col-7">
+                        <div class="row">
+                            <img id="img-painting-aboutus-desktop" class="svg-w-100"
+                                src="assets/img/img-aboutus-painting.svg"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Part_1 AboutUs 乐牧在做什么 End -->
+        <!-- Part_2 AboutLemu 关于乐牧 Start -->
+        <div id="div-container-aboutlemu" class="container-xxl">
+            <!-- 书签 > 关于乐牧 -->
+            <a name="aboutlemu"></a>
+            <!-- Mobile Layout -->
+            <div id="div-layout-aboutlemu-mobile" class="mobile-layout">
+                <!-- 标题部分 -->
+                <div id="div-title-aboutlemu-mobile" class="col-12">
+                    <div class="col-12 d-flex justify-content-center align-items-center"
+                        id="div-titleicon-aboutlemu-mobile">
+                        <img id="img-titleicon-aboutlemu-mobile" class="img-titleicon"
+                            src="assets/img/icon-aboutlemu-titleicon.svg"></img>
+                    </div>
+                    <div class="col-12 justify-content-center align-items-center">
+                        <p class="p-parttitle text-center" data-i18n="about-title">关于乐牧
+                        </p>
+                    </div>
+                </div>
+                <!-- 装饰画部分 -->
+                <div id="div-painting-aboutlemu-mobile" class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="col-12">
+                        <img id="img-painting-aboutlemu-mobile" class="svg-w-100"
+                            src="assets/img/img-aboutlemu-painting.png"></img>
+                    </div>
+                </div>
+                <!-- 文字部分 -->
+                <div id="div-text-aboutlemu-mobile" class="col-12">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img src="assets/img/icon-aboutlemu-bullet.svg" class="textbullet-aboutlemu-mobile"></img>
+                        </div>
+                        <div class="div-text-aboutlemu col">
+                            <p class="text-aboutlemu-mobile" data-i18n="about-paragraph-1">
+                                2020年底于深圳立项成立乐牧科技有限公司</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img src="assets/img/icon-aboutlemu-bullet.svg" class="textbullet-aboutlemu-mobile"></img>
+                        </div>
+                        <div class="div-text-aboutlemu col">
+                            <p class="text-aboutlemu-mobile" data-i18n="about-paragraph-2">
+                                获得了国内多家知名投资机构的支持</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img src="assets/img/icon-aboutlemu-bullet.svg" class="textbullet-aboutlemu-mobile"></img>
+                        </div>
+                        <div class="div-text-aboutlemu col">
+                            <p class="text-aboutlemu-mobile" data-i18n="about-paragraph-3">
+                                已于国内畜牧业界领头企业达成了友好的合作关系</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop Layout -->
+            <div id="div-layout-aboutlemu-desktop" class="desktop-layout">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <!-- Left Paragraph Mod -->
+                    <div class="col-5">
+                        <!-- Title Icon -->
+                        <div class="col-12 d-flex justify-content-start align-items-center">
+                            <img class="img-titleicon" src="assets/img/icon-aboutlemu-titleicon.svg"></img>
+                        </div>
+                        <!-- Title Text -->
+                        <div class="col-12 d-flex justify-content-start align-items-center">
+                            <p id="p-title-aboutlemu-desktop" class="p-parttitle text-center" data-i18n="about-title">
+                                关于乐牧</p>
+                        </div>
+                        <!-- index Paragraph -->
+                        <div class="col-12 d-flex justify-content-start align-items-center">
+                            <div id="div-text-aboutlemu-desktop" class="container-fluid">
+                                <div class="row">
+                                    <div class="div-textbullet-aboutlemu-desktop col-1">
+                                        <img class="textbullet-aboutlemu-desktop"
+                                            src="assets/img/icon-aboutlemu-bullet.svg"></img>
+                                    </div>
+                                    <div class="div-text-aboutlemu-desktop col">
+                                        <p class="text-aboutlemu-desktop" data-i18n="about-paragraph-1">
+                                            2020年底于深圳立项成立乐牧科技有限公司</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="div-textbullet-aboutlemu-desktop col-1">
+                                        <img class="textbullet-aboutlemu-desktop"
+                                            src="assets/img/icon-aboutlemu-bullet.svg"></img>
+                                    </div>
+                                    <div class="div-text-aboutlemu-desktop col">
+                                        <p class="text-aboutlemu-desktop" data-i18n="about-paragraph-2">获得了国内多家知名投资机构的支持
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="div-textbullet-aboutlemu-desktop col-1">
+                                        <img class="textbullet-aboutlemu-desktop"
+                                            src="assets/img/icon-aboutlemu-bullet.svg"></img>
+                                    </div>
+                                    <div class="div-text-aboutlemu-desktop col">
+                                        <p class="text-aboutlemu-desktop" data-i18n="about-paragraph-3">
+                                            已于国内畜牧业界领头企业达成了友好的合作关系</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 装饰画部分 -->
+                    <div id="div-img-painting-aboutlemu" class="col-5">
+                        <img id="img-painting-aboutlemu" src="assets/img/img-aboutlemu-painting.png"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Part_2 AboutLemu 关于乐牧 End -->
+        <!-- Part_3 Carousel Start -->
+        <div id="div-container-carousel">
+            <!-- 书签 > 乐牧团队 -->
+            <a name="carousel"></a>
+            <!-- Carousel -->
+            <div class="container-xxl">
+                <!-- Title Part -->
+                <!-- Title Icon -->
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <img class="img-titleicon" src="assets/img/icon-aboutlemu-titleicon.svg"></img>
+                </div>
+                <!-- Title Text -->
+                <div id="div-title-carousel" class="col-12 d-flex justify-content-center align-items-center">
+                    <p id="p-title-Carousel-desktop" class="p-parttitle text-center" data-i18n="carousel-title">
+                        近期项目</p>
+                </div>
+                <!-- Carousel Part -->
+                <div id="product-info">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+                            data-bs-wrap="false">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="col-md-4 product-carousel-card-desktop">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="assets/img/img-mobile-1.png" class="img-fluid mobile-layout">
+                                                <img src="assets/img/img-web-1.png" class="img-fluid desktop-layout">
+                                            </div>
+                                            <div class="card-img-overlay">
+                                                <p class="title-carousel-overlay">奶牛配种是规模化牛场效率的核心环节之一</p>
+                                                <p class="text-carousel-overlay">提供精准、及时、便捷的奶牛发情预测能有效的提高奶牛的产奶效率</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-4 product-carousel-card-desktop">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="assets/img/img-mobile-2.png" class="img-fluid mobile-layout">
+                                                <img src="assets/img/img-web-2.png" class="img-fluid desktop-layout">
+                                            </div>
+                                            <div class="card-img-overlay">
+                                                <p class="title-carousel-overlay">奶牛发情监控系统</p>
+                                                <p class="text-carousel-overlay">
+                                                    乐牧科技结合了物联网与人工智能技术，研发出了一款可以精准高效的为奶牛牧场提供发情监控的系统。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="prev">
+                                <span class="" aria-hidden="true">
+                                    <img class="carousel-control-buttonsvg"
+                                        src="assets/img/btn-recentprojects-left-normal.svg"></img>
+                                </span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="next">
+                                <span class="" aria-hidden="true">
+                                    <img class="carousel-control-buttonsvg"
+                                        src="assets/img/btn-recentprojects-right-normal.svg"></img>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Part_3 Carousel 乐牧团队 End -->
+        <!-- Part_4 Footer ContantUs 联系我们 Start -->
+        <div id="div-container-contantus" class="container-xxl">
+            <!-- 书签 > 联系我们 -->
+            <a name="contantus"></a>
+            <!-- Mobile Layout -->
+            <div id="div-layout-contantus-mobile" class="mobile-layout">
+                <!-- Title Mod -->
+                <div class="col-12">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <img id="img-titleicon-contantus-mobile" src="assets/img/icon-contantus-titleicon.svg"></img>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <p id="p-contactus-title-mobile" class="p-parttitle text-center" data-i18n="contact-title">联系我们
+                        </p>
+                    </div>
+                </div>
+                <!-- 3 MsgBox Mod -->
+                <div id="div-msgboxes-contantus" class="row align-items-center d-flex justify-content-around">
+                    <!-- Address MsgBox -->
+                    <div id="div-msgbox-1-contantus"
+                        class="div-msgbox-contantus col-10 d-flex justify-content-start align-items-center">
+                        <!-- Newid Checked -->
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-address.svg"></img>
+                        </div>
+                        <div class="col d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="website-string">
+                                lemutechnology.com</a>
+                        </div>
+                    </div>
+                    <!-- Email MsgBox -->
+                    <div id="div-msgbox-2-contantus"
+                        class="div-msgbox-contantus col-10 d-flex justify-content-start align-items-center">
+                        <!-- Newid Checked -->
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-email.svg"></img>
+                        </div>
+                        <div class="col d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="email-string">
+                                info@lemutechnology.com</a>
+                        </div>
+                    </div>
+                    <!-- WeChat MsgBox -->
+                    <div id="div-msgbox-3-contantus"
+                        class="div-msgbox-contantus col-10 d-flex justify-content-start align-items-center">
+                        <!-- New classChecked -->
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-wechat.svg"></img>
+                        </div>
+                        <div class="col d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="wechat-string">微信号？</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="col-12">
+                    <p id="p-text-copyright-footer-mobile" class="text-center" data-i18n="footer-string">乐牧科技有限公司©2020,
+                        版權所有.</p>
+                    <!--New id Checked -->
+                </div>
+            </div>
+            <!-- Desktop Layout -->
+            <div id="div-layout-contantus-desktop" class="desktop-layout">
+                <!-- Title Mod -->
+                <div class="col-12">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <img id="img-title-icon-contantus-desktop" src="assets/img/icon-contantus-titleicon.svg"></img>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <p id="p-contactus-title-desktop" class="p-parttitle text-center" data-i18n="contact-title">联系我们
+                        </p>
+                    </div>
+                </div>
+                <!-- 3 MsgBox Mod -->
+                <div class="row align-items-center d-flex justify-content-around">
+                    <!-- Address MsgBox -->
+                    <div id="div-msgbox-1-contantus"
+                        class="div-msgbox-contantus col-3 d-flex justify-content-start align-items-center">
+                        <div class="col-3 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-address.svg"></img>
+                        </div>
+                        <div class="col-8 d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="website-string">lemutechnology.com</a>
+                        </div>
+                    </div>
+                    <!-- Email MsgBox -->
+                    <div id="div-msgbox-2-contantus"
+                        class="div-msgbox-contantus col-3 d-flex justify-content-start align-items-center">
+                        <div class="col-3 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-email.svg"></img>
+                        </div>
+                        <div class="col-8 d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="email-string">info@lemutechnology.com</a>
+                        </div>
+                    </div>
+                    <!-- WeChat MsgBox -->
+                    <div id="div-msgbox-3-contantus"
+                        class="div-msgbox-contantus col-3 d-flex justify-content-start align-items-center">
+                        <div class="col-3 d-flex justify-content-center align-items-center">
+                            <img class="img-contantus-msgbox" src="assets/img/icon-contantus-wechat.svg"></img>
+                        </div>
+                        <div class="col-8 d-flex justify-content-start align-items-center">
+                            <a class="text-contantus-msgbox" data-i18n="wechat-string">微信号？</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <div class="col-12">
+                    <p id="p-text-copyright-footer-desktop" class="text-center" data-i18n="footer-string">乐牧科技有限公司©2020,
+                        版權所有.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Part_4 ContantUs 联系我们 End -->
+    </div>
+    <!-- Loacl JS Files -->
+    <script type="text/javascript" src="js/carousel.js"></script>
 </body>
 
 </html>

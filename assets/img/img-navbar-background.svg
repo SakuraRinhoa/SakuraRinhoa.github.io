@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="88" viewBox="0 0 1920 88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        filter: url(#多边形_3);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_867" data-name="矩形 867" class="cls-1" width="1920" height="88" transform="translate(-2366 -3625)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.509" y1="0.997" x2="0.501" y2="0.001" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#409ec3"/>
+      <stop offset="1" stop-color="#085b7b"/>
+    </linearGradient>
+    <filter id="多边形_3" x="-599.319" y="-1529.081" width="3138.639" height="3146.212" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-color="#197ba0" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="蒙版组_2" data-name="蒙版组 2" class="cls-2" transform="translate(2366 3625)">
+    <g id="组_865" data-name="组 865" transform="translate(-2366 -3625)">
+      <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path id="多边形_3-2" data-name="多边形 3" class="cls-3" d="M1633.047,0a120,120,0,0,1,103.886,59.937L2234.981,921.37a120,120,0,0,1,0,120.126l-498.047,861.433a120,120,0,0,1-103.886,59.937H636.66a120,120,0,0,1-103.887-59.937L34.726,1041.5a120,120,0,0,1,0-120.126L532.774,59.937A120,120,0,0,1,636.66,0Z" transform="matrix(0.69, -0.72, 0.72, 0.69, -534.32, 158.61)"/>
+      </g>
+    </g>
+  </g>
+</svg>
