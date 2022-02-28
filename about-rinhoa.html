@@ -42,10 +42,10 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" data-i18n="navbar-index-title">Index Page</a>
+                                <a class="nav-link" href="index.html" data-i18n="navbar-index-title">Index Page</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-rinhoa.html" data-i18n="navbar-about-title">About Rinhoa</a>
+                                <a class="nav-link active" aria-current="page" href="#" data-i18n="navbar-about-title">About Rinhoa</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-i18n="navbar-contact-title">Contant Rinhoa</a>
@@ -77,7 +77,7 @@
             </div>
         </nav>
     <div id="page-container" class="container-fluid" style="margin-top:100px">
-        <div class="col-12 col-lg-10 offset-lg-1 alert-info-on">
+        <div id="" class="col-12 col-lg-10 offset-lg-1 alert-info-on">
             <hr>
             <h1 align="center" style="font-weight:bold;">The site is under construction.</h1>
             <div class="alert alert-info" role="alert">
@@ -86,8 +86,24 @@
             <hr>
         </div>
         <div class="col-12 col-lg-10 offset-lg-1">
-            <h2 align="center" style="font-weight:bold;">Just click one of the links on the navbar</h2>
-            <h3 align="center">If you want to get more information of Rinhoa.</h3>
+            <h2 align="center" style="font-weight:bold;">About Rinhoa</h2>
+            <h3 align="center"></h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="gender-tab" data-bs-toggle="tab" data-bs-target="#gender" type="button" role="tab" aria-controls="gender" aria-selected="true">Introduction</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Birth-tab" data-bs-toggle="tab" data-bs-target="#Birth" type="button" role="tab" aria-controls="Birth" aria-selected="false">Birth</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="gender" role="tabpanel" aria-labelledby="gender-tab"><p>I am a transgirl.</p></div>
+                <div class="tab-pane fade" id="Birth" role="tabpanel" aria-labelledby="Birth-tab"><p>Born as a boy on November 1, 2001. Reborn as a girl on April 7, 2021.</p></div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              </div>
             <hr>
             <p style="text-align:center;">Copyright&nbsp;©&nbsp;2022&nbsp;Rinhoa&nbsp;Sakura.<br />All&nbsp;rights&nbsp;reserved.</p>
             <!-- <p style="text-align:center;">Copyright&nbsp;©&nbsp;2022&nbsp;Rinhoa&nbsp;Sakura.<br />All&nbsp;rights&nbsp;reserved.</p> -->
